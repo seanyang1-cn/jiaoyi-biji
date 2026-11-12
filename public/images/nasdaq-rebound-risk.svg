@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="420" viewBox="0 0 880 420" role="img">
+<title>风险与目标（思路示意图）</title>
+<style>
+  text { font-family: "Noto Sans CJK SC", "Noto Sans SC", "PingFang SC", "Helvetica Neue", sans-serif; fill: #171717; font-size: 13px; }
+  .muted { fill: #737373; }
+  .small { font-size: 12px; }
+  .title { font-size: 16px; font-weight: 600; }
+  .label { font-size: 12px; fill: #171717; }
+  .caption { font-size: 12px; fill: #737373; }
+</style>
+<rect width="880" height="420" fill="#ffffff"/>
+<text class="title" x="32" y="36">风险与目标</text><text class="caption" x="32" y="56">开仓后如果 10 到 20 分钟站稳，就把止损提到保本附近</text><rect x="56" y="86" width="792" height="274" fill="#ffffff" stroke="#e5e5e5" rx="8"/><rect x="57" y="118" width="790" height="56" fill="#f5f5f5"/><line x1="64" y1="118" x2="840" y2="118" stroke="#a3a3a3" stroke-width="1" stroke-dasharray="4 3"/><line x1="64" y1="174" x2="840" y2="174" stroke="#a3a3a3" stroke-width="1" stroke-dasharray="4 3"/><text class="label" x="72" y="142">目标：回撤的 1/3–1/2</text><text class="muted small" x="72" y="160">大约 4–5.5R</text><line x1="64" y1="230" x2="840" y2="230" stroke="#171717" stroke-width="1.25"/><text class="label" x="72" y="222">开仓价</text><line x1="64" y1="310" x2="840" y2="310" stroke="#a3a3a3" stroke-width="1.5"/><text class="label" x="72" y="330">初始止损（1R）</text><path d="M 190 250 C 212.5 242.5, 206.9 232.2, 250 230 C 293.1 227.8, 261.9 244.8, 305 244 C 348.1 243.2, 310.6 239.2, 365 228 C 419.4 216.8, 388.1 232.8, 450 214 C 511.9 195.2, 466.2 202.8, 530 178 C 593.8 153.2, 548.8 165.2, 620 148 C 691.2 130.8, 648.8 139.5, 720 132 C 791.2 124.5, 776.2 129.5, 810 128" fill="none" stroke="#171717" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/><circle cx="250" cy="230" r="4.5" fill="#ffffff" stroke="#171717" stroke-width="1.75"/><text class="small muted" x="260" y="252">开仓</text><circle cx="365" cy="228" r="4" fill="#ffffff" stroke="#171717" stroke-width="1.75"/><path d="M 430 310 C 470 310, 470 230, 430 230" fill="none" stroke="#737373" stroke-width="1.25"/><polygon points="430,230 437,239 423,239" fill="#737373"/><text class="muted small" x="482" y="274">站稳后</text><text class="muted small" x="482" y="290">止损上移到保本附近</text><line x1="820" y1="230" x2="820" y2="310" stroke="#a3a3a3" stroke-width="1"/><line x1="814" y1="230" x2="826" y2="230" stroke="#a3a3a3" stroke-width="1"/><line x1="814" y1="310" x2="826" y2="310" stroke="#a3a3a3" stroke-width="1"/><text class="muted small" text-anchor="middle" x="808" y="276">1R</text><text class="caption" x="56" y="392">示意图，用来看风险和目标的关系，不是当时的真实报价</text></svg>
