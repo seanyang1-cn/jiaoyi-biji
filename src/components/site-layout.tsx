@@ -23,7 +23,7 @@ export function SiteLayout() {
       <SidebarProvider>
         <AppSidebar />
         <SidebarInset>
-          <header className="flex h-16 shrink-0 items-center gap-2 border-b px-4">
+          <header className="sticky top-0 z-20 flex h-16 shrink-0 items-center gap-2 border-b bg-background px-4">
             <SidebarTrigger className="-ml-1" />
             <Separator
               orientation="vertical"
@@ -32,9 +32,7 @@ export function SiteLayout() {
             <SiteBreadcrumb />
           </header>
           <div className="flex flex-1 flex-col px-8 pt-8 pb-16 max-md:px-5 max-md:pt-5 max-md:pb-12">
-            <div className="mx-auto w-full max-w-3xl">
-              <Outlet />
-            </div>
+            <Outlet />
           </div>
         </SidebarInset>
       </SidebarProvider>
