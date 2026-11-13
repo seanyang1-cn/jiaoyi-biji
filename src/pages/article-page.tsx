@@ -33,6 +33,10 @@ function sectionId(index: number) {
   return `section-${index + 1}`
 }
 
+const qaRow =
+  "grid grid-cols-[2rem_minmax(0,1fr)] gap-x-2 items-baseline"
+const qaContentInset = "ml-[2.5rem]"
+
 export function ArticlePage() {
   const { pathname } = useLocation()
   const note = getNoteByPath(pathname)
@@ -87,10 +91,14 @@ export function ArticlePage() {
             <section key={block.heading}>
               <h2
                 id={sectionId(index)}
-                className="mt-8 mb-3 flex scroll-mt-24 gap-2 text-xl leading-snug font-semibold tracking-tight"
+                className={
+                  note.format === "qa"
+                    ? `mt-8 mb-3 ${qaRow} scroll-mt-24 text-xl leading-snug font-semibold tracking-tight`
+                    : "mt-8 mb-3 scroll-mt-24 text-xl leading-snug font-semibold tracking-tight"
+                }
               >
                 {note.format === "qa" ? (
-                  <span className="shrink-0 text-muted-foreground">问</span>
+                  <span className="text-muted-foreground">问</span>
                 ) : null}
                 <span>{block.heading}</span>
               </h2>
@@ -99,13 +107,13 @@ export function ArticlePage() {
                   key={paragraph}
                   className={
                     note.format === "qa"
-                      ? "mb-4 flex gap-2 text-base leading-[1.75]"
+                      ? `mb-4 ${qaRow} text-base leading-[1.75]`
                       : "mb-4 text-base leading-[1.75]"
                   }
                 >
                   {note.format === "qa" ? (
                     <>
-                      <span className="shrink-0 font-semibold text-muted-foreground">答</span>
+                      <span className="font-semibold text-muted-foreground">答</span>
                       <span>{paragraph}</span>
                     </>
                   ) : (
@@ -114,13 +122,25 @@ export function ArticlePage() {
                 </p>
               ))}
               {block.list ? (
-                <ul className="mb-4 list-disc space-y-[0.35rem] pl-5 text-base leading-[1.75]">
+                <ul
+                  className={
+                    note.format === "qa"
+                      ? `mb-4 ${qaContentInset} list-disc space-y-[0.35rem] pl-5 text-base leading-[1.75]`
+                      : "mb-4 list-disc space-y-[0.35rem] pl-5 text-base leading-[1.75]"
+                  }
+                >
                   {block.list.map((item) => (
                     <li key={item}>{item}</li>
                   ))}
                 </ul>
               ) : null}
-              <ArticleFigures figures={block.figures} />
+              {note.format === "qa" && block.figures?.length ? (
+                <div className={qaContentInset}>
+                  <ArticleFigures figures={block.figures} />
+                </div>
+              ) : (
+                <ArticleFigures figures={block.figures} />
+              )}
             </section>
           ))}
         </div>
