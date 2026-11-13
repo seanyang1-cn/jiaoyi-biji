@@ -78,6 +78,7 @@ export function ArticlePage() {
         </p>
         {note.callout ? (
           <div className="mb-8 rounded-[var(--radius)] border border-border bg-muted px-[1.125rem] py-4 text-[0.9375rem] leading-[1.65]">
+            <p className="mb-1.5 text-sm font-medium text-muted-foreground">交易启示</p>
             <p>{note.callout}</p>
           </div>
         ) : null}
