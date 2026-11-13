@@ -90,7 +90,7 @@ export function ArticlePage() {
                 className={
                   note.format === "qa"
                     ? `${index === 0 ? "mt-8" : "mt-[3.75rem]"} mb-3 scroll-mt-24 text-2xl leading-snug font-semibold tracking-tight`
-                    : "mt-8 mb-3 scroll-mt-24 text-xl leading-snug font-semibold tracking-tight"
+                    : "mt-8 mb-3 scroll-mt-24 text-2xl leading-snug font-semibold tracking-tight"
                 }
               >
                 {block.heading}
