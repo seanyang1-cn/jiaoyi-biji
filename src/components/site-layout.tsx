@@ -32,7 +32,7 @@ export function SiteLayout() {
             <SiteBreadcrumb />
           </header>
           <div className="flex flex-1 flex-col px-8 pt-8 pb-16 max-md:px-5 max-md:pt-5 max-md:pb-12">
-            <div className="mx-auto w-full max-w-2xl">
+            <div className="mx-auto w-full max-w-3xl">
               <Outlet />
             </div>
           </div>
