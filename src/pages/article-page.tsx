@@ -98,7 +98,7 @@ export function ArticlePage() {
                 }
               >
                 {note.format === "qa" ? (
-                  <span className="text-muted-foreground">问</span>
+                  <span className="text-muted-foreground">Q</span>
                 ) : null}
                 <span>{block.heading}</span>
               </h2>
@@ -113,7 +113,7 @@ export function ArticlePage() {
                 >
                   {note.format === "qa" ? (
                     <>
-                      <span className="font-semibold text-muted-foreground">答</span>
+                      <span className="font-semibold text-muted-foreground">A</span>
                       <span>{paragraph}</span>
                     </>
                   ) : (
