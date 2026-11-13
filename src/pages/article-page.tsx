@@ -62,11 +62,11 @@ export function ArticlePage() {
     <div
       className={
         showToc
-          ? "mx-auto flex w-full max-w-3xl justify-center gap-8 xl:-mx-4 xl:w-[calc(100%+2rem)] xl:max-w-[calc(48rem+2rem+12rem)]"
+          ? "relative w-full xl:pr-52"
           : "mx-auto w-full max-w-3xl"
       }
     >
-      <article className="w-full min-w-0 max-w-3xl">
+      <article className="mx-auto w-full min-w-0 max-w-3xl">
         <p className="mb-2 text-sm font-medium text-muted-foreground">
           {note.section}
         </p>

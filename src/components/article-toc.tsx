@@ -37,9 +37,10 @@ export function ArticleToc({ items }: { items: ArticleTocItem[] }) {
   }, [items])
 
   return (
+    <aside className="pointer-events-none absolute inset-y-0 right-0 hidden w-48 xl:block">
     <nav
       aria-label="目录"
-      className="sticky top-24 hidden max-h-[calc(100svh-8rem)] w-48 shrink-0 self-start overflow-y-auto xl:block"
+      className="pointer-events-auto sticky top-24 max-h-[calc(100svh-8rem)] overflow-y-auto"
     >
       <p className="mb-3 text-xs font-medium text-muted-foreground">目录</p>
       <ul className="border-l border-border">
@@ -71,5 +72,6 @@ export function ArticleToc({ items }: { items: ArticleTocItem[] }) {
         })}
       </ul>
     </nav>
+    </aside>
   )
 }
