@@ -45,7 +45,7 @@ export function HomePage() {
   }, [])
 
   return (
-    <>
+    <div className="mx-auto w-full max-w-3xl">
       <p className="mb-2 text-sm font-medium text-muted-foreground">
         {month.hero.kicker}
       </p>
@@ -96,6 +96,6 @@ export function HomePage() {
           <NoteList notes={mindsetNotes} />
         </>
       ) : null}
-    </>
+    </div>
   )
 }

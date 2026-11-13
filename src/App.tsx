@@ -11,6 +11,11 @@ export default function App() {
         <Route element={<SiteLayout />}>
           <Route path="/" element={<HomePage />} />
           <Route path="/2026-10" element={<HomePage />} />
+          <Route path="/2026-09" element={<HomePage />} />
+          <Route path="/2026-08" element={<HomePage />} />
+          <Route path="/2026-07" element={<HomePage />} />
+          <Route path="/2026-06" element={<HomePage />} />
+          <Route path="/2026-02" element={<HomePage />} />
           <Route path="/case-study/:slug" element={<ArticlePage />} />
           <Route path="/mindset/:slug" element={<ArticlePage />} />
           <Route path="/process/:slug" element={<ArticlePage />} />
